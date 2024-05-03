@@ -1,0 +1,428 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: "Montserrat", serif;
+}
+
+:root{
+    --gray-color: #474747;
+}
+
+.navbar{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    background-image: url(./assets/image43.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar h1{
+    color: white;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.navbar ul{
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    margin-right: 40px;
+}
+
+.navbar a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    cursor: pointer;
+    color: var(--gray-color);
+}
+
+/* Expectations */
+#Expectations{
+    margin-top: 50px;
+    width: 100%;
+    height: 220vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: var(--gray-color);
+    height: 200px;
+}
+
+.expectations-item{
+    height: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.expectations-item p{
+    margin-left: 30px;
+    width: 60%;
+    font-size: 14px;
+    line-height: 2.5;
+    letter-spacing: 0.5px;
+}
+
+.expectations-item img{
+    height: 600px;
+    padding: 20px;
+}
+
+/* Booking */
+#Booking{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+form{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    margin-left: 50px;
+}
+
+.form img{
+    margin-right: 50px;
+    width: 600px;
+    height: 600px;
+}
+
+form input{
+    border: none;
+    color: black;
+    font-size: 24px;
+    width: 400px;
+    height: 50px;
+}
+
+form input:hover{
+    border-bottom: 1px solid black;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.name input{
+    width: 200px;
+}
+
+form textarea{
+    height: 100px;
+    border: none;
+    font-size: 20px;
+}
+
+/* Location */
+#Location{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.locations{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.location-left{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 25px;
+}
+
+.locations img{
+    height: 700px;
+    width: 100%;
+}
+
+.locations img:hover{
+    cursor: pointer;
+}
+
+#btnControl , #btnControl2 {
+    display: none;
+}
+
+#btnControl:checked + label > img , #btnControl2:checked + label > img{
+    border: 2px solid yellow;
+}
+
+.location-right{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-right: 100px;
+    font-size: 20px;
+}
+
+.location-right select{
+    font-size: 30px;
+    height: 60px;
+}
+
+.selectType{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 30px;
+}
+
+.selectType input[type="radio"]{
+    width: 40px;
+    height: 40px;
+}
+
+.selectType input, .selectType label{
+    cursor: pointer;
+}
+
+.location-right textarea{
+    font-size: 24px;
+    height: 100px;
+}
+
+/* Package */
+#Package{
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selectPackage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.selectPackage label{
+    margin-left: 20px;
+    width: 1400px;
+    height: 100px;
+    border: 1px solid black;
+    font-size: 30px;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.selectPackage input[type="radio"]{
+    margin-right: 20px;
+    transform:scale(2);
+}
+
+#Package button{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#Package button:hover{
+    width: 105px;
+    height: 55px;
+    font-size: 22px;
+}
+
+/* Portfolio */
+#Portfolio{
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#Portfolio .title{
+    height: 100px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.couples{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#Weddings{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.blog{
+    height: 5000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blog-items{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 1250px){
+    .expectations-item p{
+        font-size: 12px;
+    }
+
+    #Booking{
+        height: 160vh;
+    }
+
+    .form img{
+        width: 400px;
+        height: 400px;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    .form{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1050px){
+    .navbar h1{
+        margin-left: 0px;
+        font-size: 25px;
+    }
+
+    .navbar a{
+        font-size: 12px;
+    }
+
+    .expectations-item img{
+        height: 400px;
+    }
+}
+
+@media(max-width: 800px){
+    .navbar h1{
+        font-size: 20px;
+    }
+
+    .navbar ul{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .expectations-item{
+        height: 400px;
+    }
+
+    .expectations-item p{
+        font-size: 8px;
+    }
+
+    .expectations-item img{
+        height: 300px;
+    }
+
+    .form img{
+        width: 400px;
+        height: 400px;
+        margin-right: 0px;
+    }
+}
+
+@media(max-width: 650px){
+    #Expectations{
+        height: 2400px;
+    }
+    
+    .expectations-item{
+        flex-direction: column;
+        height: 1800px;
+    }
+
+    .expectations-item:nth-child(4){
+        margin-top: 50px;
+        height: 4000px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .expectations-item:nth-child(4) img{
+        height: 900px;
+        width: 200px;
+    }
+
+    .expectations-item p{
+        width: 100%;
+        height: 800px;
+        font-size: 8px;
+    }
+
+    .expectations-item:nth-child(3) img{
+        width: 160px;
+        height: 800px;
+    }
+
+    .expectations-item img{
+        width: 300px;
+        height: 800px;
+    }
+
+    .name{
+        gap: 0px;
+    }
+
+    form input{
+        font-size: 16px;
+    }
+
+    #Booking .title{
+        font-size: 24px;
+    }
+}
+
+

@@ -1,0 +1,1223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Home */
+#Home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    overflow-x: hidden;
+    background-image: url(./assets/image2.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: backgroundAnim 60s ease-in infinite;
+}
+
+@keyframes backgroundAnim {
+    0% {
+        background-image: url(./assets/image2.webp);
+    }
+
+    9% {
+        background-image: url(./assets/image2.webp), url(./assets/image14.webp);
+    }
+
+    10% {
+        background-image: url(./assets/image14.webp);
+    }
+
+    19% {
+        background-image: url(./assets/image14.webp), url(./assets/image15.webp);
+    }
+
+    20% {
+        background-image: url(./assets/image15.webp);
+    }
+
+    29% {
+        background-image: url(./assets/image15.webp), url(./assets/image4.webp);
+    }
+
+    30% {
+        background-image: url(./assets/image4.webp), url(./assets/image1.webp);
+    }
+
+    39% {
+        background-image: url(./assets/image4.webp), url(./assets/image1.webp);
+    }
+
+    40% {
+        background-image: url(./assets/image1.webp), url(./assets/image3.webp);
+    }
+
+    49% {
+        background-image: url(./assets/image1.webp), url(./assets/image3.webp);
+    }
+
+    50% {
+        background-image: url(./assets/image3.webp);
+    }
+
+    59% {
+        background-image: url(./assets/image3.webp), url(./assets/image5.webp);
+    }
+
+    60% {
+        background-image: url(./assets/image5.webp);
+    }
+
+    69% {
+        background-image: url(./assets/image5.webp), url(./assets/image6.webp);
+    }
+
+    70% {
+        background-image: url(./assets/image6.webp);
+    }
+
+    79% {
+        background-image: url(./assets/image6.webp), url(./assets/image7.webp);
+    }
+
+    80% {
+        background-image: url(./assets/image7.webp);
+    }
+
+    89% {
+        background-image: url(./assets/image7.webp), url(./assets/image8.webp);
+    }
+
+    90% {
+        background-image: url(./assets/image8.webp);
+    }
+
+    99% {
+        background-image: url(./assets/image8.webp);
+    }
+
+    100% {
+        background-image: url(./assets/image2.webp)
+    }
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Montserrat", serif;
+}
+
+.logo {
+    width: 10%;
+    height: 100%;
+    margin-left: 100px;
+    overflow: visible;
+}
+
+.logo h1 {
+    height: 100%;
+    width: 100%;
+    color: white;
+    overflow: visible;
+}
+
+nav {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+nav ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 60px;
+    padding-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+}
+
+nav a:hover {
+    color: lightgray;
+
+}
+
+.middle-style {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    opacity: 0;
+    animation: middle-styleFadeIn 6s forwards;
+    letter-spacing: 5px;
+}
+
+@keyframes middle-styleFadeIn {
+    20% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.bottom-style {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.bottom-style h1 {
+    opacity: 0;
+    animation: h1FadeIn 3s forwards;
+    animation-delay: 6s;
+}
+
+@keyframes h1FadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.bottom-style hr {
+    width: 40%;
+}
+
+/* Quote-1 */
+.quote-1 {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-family: "Montserrat", serif;
+    color: #474747;
+}
+
+.quote-1-left {
+    width: 35%;
+    height: 80%;
+    font-size: 45px;
+    display: flex;
+    margin-bottom: 4%;
+    font-weight: 500;
+
+}
+
+.quote-1-left p {
+    overflow-y: hidden;
+}
+
+.quote-1-right {
+    width: 20%;
+    height: 50%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+/* Portfolio */
+#Portfolio {
+    width: 100vw;
+    height: 120vh;
+    display: flex;
+    flex-direction: row;
+    font-size: 40px;
+    font-family: "Montserrat", serif;
+    color: white;
+}
+
+.couples {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    padding-left: 10px;
+    padding-bottom: 50px;
+    background-image: url(./assets/image9.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.couples a,
+.weddings a {
+    color: white;
+    text-decoration: none;
+}
+
+.couples a:hover,
+.weddings a:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+.weddings {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    padding-left: 10px;
+    padding-bottom: 50px;
+    background-image: url(./assets/image11.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.quote-2 {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-family: "Montserrat", serif;
+    color: #474747;
+}
+
+.quote-2-left {
+    width: 50%;
+    height: 100%;
+    font-size: 40px;
+    padding-left: 100px;
+    padding-top: 50px;
+    line-height: 1.6;
+}
+
+.quote-2-right {
+    width: 70%;
+    height: 90%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+
+.quote-2-right img:nth-child(1) {
+    position: absolute;
+    right: 250px;
+    width: 500px;
+}
+
+.quote-2-right img:nth-child(2) {
+    position: absolute;
+    top: 200px;
+
+    width: 400px;
+}
+
+.quote-2-right p {
+    position: absolute;
+    right: 450px;
+    top: 300px;
+}
+
+/* Blog */
+#Blog {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    font-family: "Montserrat", serif;
+
+}
+
+#Blog h1 {
+    font-size: 60px;
+    text-align: center;
+    font-weight: normal;
+    color: #474747;
+}
+
+#Blog h2 {
+    font-size: 15px;
+    text-align: center;
+    font-weight: normal;
+    color: #474747;
+}
+
+#Blog a {
+    color: white;
+    text-decoration: none;
+}
+
+#Blog a:hover {
+    cursor: pointer;
+    color: #474747;
+}
+
+.blog-items {
+    width: 100%;
+    height: 755px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.blog-item {
+    width: 400px;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.blog-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.blog-item h3 {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.blog-2-title {
+    width: 100%;
+    height: 40vh;
+    color: white;
+    background-color: black;
+}
+
+.blog-2-title h1 {
+    width: 50%;
+    height: 100%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.blog-2 {
+    width: 100%;
+    height: 300vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.blog-2-item:nth-child(1) {
+    height: 33.4%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    font-family: "Montserrat", serif;
+    font-size: 20px;
+    background-image: url(./assets/image22.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-2-item:nth-child(2) {
+    height: 33.4%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    font-family: "Montserrat", serif;
+    font-size: 20px;
+    background-image: url(./assets/image23.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-2-item:nth-child(3) {
+    height: 33.4%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    font-family: "Montserrat", serif;
+    font-size: 20px;
+    background-image: url(./assets/image24.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-2-item:nth-child(4) {
+    height: 33.4%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    font-family: "Montserrat", serif;
+    font-size: 20px;
+    background-image: url(./assets/image30.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-2-item:nth-child(5) {
+    height: 33.4%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    font-family: "Montserrat", serif;
+    font-size: 20px;
+    background-image: url(./assets/image31.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-2-item:nth-child(6) {
+    height: 33.4%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    font-family: "Montserrat", serif;
+    font-size: 20px;
+    background-image: url(./assets/image32.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-2-item:nth-child(7) {
+    height: 33.4%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    font-family: "Montserrat", serif;
+    font-size: 20px;
+    background-image: url(./assets/image33.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-2-item:nth-child(8) {
+    height: 33.4%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    font-family: "Montserrat", serif;
+    font-size: 20px;
+    background-image: url(./assets/image34.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-2-item:nth-child(9) {
+    height: 33.4%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    font-family: "Montserrat", serif;
+    font-size: 20px;
+    background-image: url(./assets/image35.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-2-item h3 {
+    font-weight: 300;
+    color: white;
+}
+
+.blog-2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.blog-2 a:hover {
+    color: #474747;
+    cursor: pointer;
+}
+
+.blog-3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    
+}
+
+.blog-3-items {
+    width: 97%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #474747;
+    font-size: 25px;
+    margin-left: 50px;
+    overflow-y: hidden;
+}
+
+.blog-3-items img {
+    height: 400px;
+    width: 700px;
+}
+
+
+.blog-3-items p {
+    width: 600px;
+    height: 400px;
+    line-height: 2;
+    
+}
+
+.quote-3 {
+    width: 100%;
+    height: 105vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.quote-3 img {
+    height: 800px;
+}
+
+.quote-3 p {
+    width: 400px;
+    color: white;
+    font-size: 30px;
+    line-height: 1.6;
+    margin-top: 100px;
+}
+
+.quote-3 h1 {
+    width: 400px;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 200px;
+    margin-right: 50px;
+}
+
+/* Info */
+#Info {
+    width: 100%;
+    height: 80vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.for-couples {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 250px;
+    letter-spacing: 20px;
+    margin-left: 50px;
+}
+
+.for-couples a {
+    color: white;
+    text-decoration: none;
+}
+
+.for-couples a:hover {
+    cursor: pointer;
+    color: #474747;
+}
+
+.info-couples {
+    width: 100%;
+    height: 20%;
+}
+
+.info-couples ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.for-weddings {
+    width: 100%;
+    height: 60vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.for-weddings-left {
+    width: 50%;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.for-weddings a {
+    color: white;
+    text-decoration: none;
+}
+
+.for-weddings a:hover {
+    cursor: pointer;
+    color: #474747;
+}
+
+.for-weddings-left ul {
+    height: 40%;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 22px;
+    letter-spacing: 4px;
+}
+
+.for-weddings-left ul li {
+    font-weight: 100;
+}
+
+.for-weddings-left img {
+    width: 100%;
+}
+
+.for-weddings-right {
+    width: 50%;
+    height: 100%;
+}
+
+.for-weddings-right img {
+    width: 900px;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    border: 2px solid #474747;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.contact-me a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-me a:hover {
+    cursor: pointer;
+    color: #474747;
+}
+
+/* Contact */
+#Contact {
+    width: 100%;
+    height: 80vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.contact-items {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.contact-items p {
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 30%;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.contact-items-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 60%;
+    margin-right: 50px;
+}
+
+.contact-items-right img {
+    width: 300px;
+    height: 500px;
+
+}
+
+.contact-items-right h1 {
+    margin-right: 100px;
+}
+
+form {
+    height: 100%;
+    width: 60%;
+    color: white;
+    font-size: 15px;
+    text-align: end;
+    margin-right: 50px;
+}
+
+.contact-me {
+    padding-top: 20px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+.contact-me input {
+    background-color: black;
+    border: none;
+    border-bottom: 2px solid #474747;
+    height: 40px;
+    width: 350px;
+    color: white;
+    font-size: 20px;
+}
+
+.contact-me textarea {
+    background-color: black;
+    border: none;
+    border-bottom: 2px solid #474747;
+    height: 50px;
+    width: 350px;
+    color: white;
+}
+
+.socials {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.socials img {
+    height: 40px;
+}
+
+.socials img:hover {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 1700px) {
+    .for-weddings-right img {
+        width: 700px;
+    }
+}
+
+@media (max-width: 1550px) {
+    .for-couples {
+        font-size: 200px;
+    }
+
+    .contact-items p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1450px) {
+    nav {
+        width: 60%;
+    }
+
+    .quote-1-left {
+        font-size: 30px;
+    }
+
+    .quote-2-right img:nth-child(1) {
+        width: 450px;
+    }
+
+    .quote-2-right img:nth-child(2) {
+        width: 350px;
+    }
+
+    .for-weddings-right img {
+        width: 600px;
+    }
+
+    form {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1350px) {
+    .for-couples {
+        font-size: 150px;
+    }
+
+    .for-weddings-right img {
+        width: 500px;
+    }
+
+    .blog-3-items p {
+        width: 300px;
+        font-size: 20px;
+        margin-right: 60px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .quote-2-right img:nth-child(1) {
+        width: 400px;
+    }
+
+    .quote-2-right img:nth-child(2) {
+        width: 300px;
+        top: 100px;
+        right: 80px;
+    }
+
+    .blog-item {
+        width: 350px;
+        height: 600px;
+    }
+
+    .info-couples ul {
+        font-size: 15px;
+    }
+
+    .contact-items p {
+        font-size: 16px;
+    }
+
+    .contact-me input {
+        width: 250px;
+    }
+
+    .contact-me textarea {
+        width: 250px;
+    }
+
+    .middle-style {
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width: 1150px) {
+    .quote-2-left {
+        padding-left: 0px;
+        width: 30%;
+    }
+
+    .quote-2-right p {
+        right: 300px;
+    }
+
+    .blog-item{
+        width: 300px;
+        height: 550px;
+    }
+
+    .blog-3-items img{
+        width: 500px;
+        height: 300px;
+    }
+}
+
+
+@media(max-width: 950px) {
+    nav a {
+        font-size: 13px;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+
+    .for-weddings-right img {
+        width: 400px;
+    }
+
+    .quote-2-left {
+        font-size: 30px;
+    }
+
+    .quote-2-right img:nth-child(1) {
+        right: 100px;
+    }
+
+    .quote-2-right img:nth-child(2) {
+        right: 0px;
+    }
+
+    .blog-item{
+        width: 250px;
+        height: 450px;
+    }
+
+    .blog-3-items p{
+        width: 160px;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 800px){
+    .blog-3-items{
+        margin-left: 0px;
+    }
+    .blog-3-items p{
+        width: 180px;
+        font-size: 12px;
+        margin-right: 0px;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    nav {
+        width: 73%;
+    }
+
+    .bottom-style {
+        font-size: 14px;
+    }
+
+    .quote-1-left {
+        font-size: 24px;
+    }
+
+    .quote-1-right {
+        font-size: 14px;
+    }
+
+    .blog-item{
+        width: 220px;
+        height: 400px;
+    }
+}
+
+@media (max-height: 800px){
+    #Blog{
+        height: 110vh;
+    }
+}
+
+@media (max-height: 700px) {
+    .quote-2{
+        height: 80vh;
+    }
+
+    .quote-1-right {
+        height: 80%;
+    }
+    
+    .quote-2-left{
+        font-size: 24px;
+    }
+
+    #Blog{
+        height: 130vh;
+    }
+
+    .blog-3{
+        margin-top: 0px;
+        height: 120vh;
+    }
+}
+
+
+@media(max-width: 700px) {
+    .logo {
+        width: 1%;
+    }
+
+    .logo h1 {
+        font-size: 14px;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+
+    nav {
+        width: 99%;
+        margin-right: 0px;
+    }
+
+    .middle-style {
+        font-size: 18px;
+    }
+
+    #Portfolio {
+        flex-direction: column;
+    }
+
+    .couples {
+        width: 100%;
+    }
+
+    .weddings {
+        width: 100%;
+    }
+
+    .quote-2-right img:nth-child(1) {
+        width: 300px;
+    }
+
+    .quote-2-right img:nth-child(2) {
+        width: 250px;
+        top: 120px;
+    }
+
+    #Blog{
+        height: 250vh;
+    }
+
+    #Blog h1{
+        height: 100px;
+    }
+
+    #Blog h2{
+        height: 50px;
+    }
+
+    .blog-items{
+        flex-direction: column;
+        align-items: center;
+        height: 2000px;
+        gap: 20px;
+    }
+
+    .blog-item{
+        width: 300px;
+        height: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .middle-style {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .bottom-style {
+        font-size: 10px;
+    }
+
+    .quote-1-left {
+        font-size: 18px;
+    }
+
+    .quote-2 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .quote-2-left {
+        width: 100%;
+        height: 40%;
+        font-size: 24px;
+    }
+
+    .quote-2-right {
+        height: 60%;
+        width: 100%;
+    }
+
+    .quote-2-right p {
+        top: 200px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    nav ul {
+        gap: 14px;
+    }
+
+    .middle-style {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .bottom-style {
+        font-size: 8px;
+    }
+
+    .quote-2-right img:nth-child(1){
+        width: 250px;
+    }
+
+    .quote-2-right img:nth-child(2){
+        width: 200px;
+    }
+    
+    .quote-2-right p{
+        width: 100px;
+        left: 20px;
+    }
+}
